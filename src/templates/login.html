@@ -1,0 +1,25 @@
+
+  <header>
+    <div class="logo">
+      <img src="../static/img/logo_negro.png" alt="Logo Empresa">
+    </div>
+    <div class="admin-icon">
+      <img id="iconoAdmin" src="../static/img/icono_administrador.png" alt="Icono Administrador">
+    </div>
+  </header>
+<link rel="stylesheet" href="{{url_for('static', filename='./css/formulario.css')}}">
+<div class="login-box">
+    <p>Login</p>
+    <form action="/login" method="POST">
+      <div class="user-box">
+        <input required="" name="correo" type="text">
+        <label>Email</label>
+      </div>
+      <div class="user-box">
+        <input required="" name="admin_password" type="password">
+        <label>Password</label>
+      </div>
+        <button class="submit" type="submit"><span>Submit</span></button>
+    </form>
+    <p>Don't have an account? <a href="/registro" class="a2">Registrarse</a></p>
+  </div>
